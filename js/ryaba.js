@@ -1,7 +1,7 @@
 const dataURL = "https://api.jsonbin.io/b/5e905926172eb643896166e7";
 
-function handleButton() {
-  // взять данные по dataUrl, вытащить их и передать в handleData
+function handleButton(dataURL) {
+  // return data = 
 }
 
 function handleData(data) {
