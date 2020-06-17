@@ -11,17 +11,16 @@ function getInputs() {
   arrOfInputs = [var1,var2,var3,var4,var5,var6,speach];
   return arrOfInputs;
 }
+function makeFairyTale(arr, text){
+  arr.forEach(element => text.replace('{var1}', element));
+}
+
 $(document).ready(function() {
-  $(".btn-change-var").click(function(){
+  $(".btn-change-var").click(function(e){
+    e.preventDefault();
     arr=getInputs();
-    console.log(arr);
-    $('#var1').val() = arr[0];
-    $('#var2').html(arr[1]);
-    $('#var3').val(arr[2]);
-    $('#var4').val(arr[3]);
-    $('#var5').val(arr[4]);
-    $('#var6').val(arr[5]);
-    $('#speach').val(arr[6]); 
+    ft = makeFairyTale(); 
+    $("#result-text").text(ft);
   });
 });
 
