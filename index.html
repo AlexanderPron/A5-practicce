@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
+
 </head>
 <body>
     <div class="container">
@@ -14,19 +15,19 @@
         <form action="" method="GET">
             <div class="row">
                 <div class="col-1"><label for="var1">var1:</label></div>
-                <div class="col-11"><input type="text" name="var1"></div>
+                <div class="col-11"><input type="text" id="var1" placeholder="Дед"></div>
                 <div class="col-1"><label for="var2">var2:</label></div>
-                <div class="col-11"><input type="text" name="var2"></div>
+                <div class="col-11"><input type="text" id="var2" placeholder="Баба"></div>
                 <div class="col-1"><label for="var3">var3:</label></div>
-                <div class="col-11"><input type="text" name="var3"></div>
+                <div class="col-11"><input type="text" id="var3" placeholder="курочка Ряба"></div>
                 <div class="col-1"><label for="var4">var4:</label></div>
-                <div class="col-11"><input type="text" name="var4"></div>
+                <div class="col-11"><input type="text" id="var4" placeholder="яичко"></div>
                 <div class="col-1"><label for="var5">var5:</label></div>
-                <div class="col-11"><input type="text" name="var5"></div>
-                <div class="col-1"><label for="var6">var7:</label></div>
-                <div class="col-11"><input type="text" name="var6"></div>
+                <div class="col-11"><input type="text" id="var5" placeholder="мышка"></div>
+                <div class="col-1"><label for="var6">var6:</label></div>
+                <div class="col-11"><input type="text" id="var6" placeholder="хвостиком"></div>
                 <div class="col-1"><label for="speach">speach:</label></div>
-                <div class="col-11"><input type="text" name="speach"></div>
+                <div class="col-11"><input type="text" id="speach" placeholder="Ёманарот!"></div>
             </div>
             <div class="row">
                 <div class="col-12">
@@ -40,7 +41,7 @@
                       <button type="button" class="close" data-dismiss="modal">
                         <span>&times;</span>
                       </button>
-                      {"text":["Жили-были {var1} да {var2}","Была у них {var3}","Снесла {var3} {var4}, не простое - золотое","- {var1} бил, бил - не разбил","- {var2} била, била - не разбила","{var5} бежала, {var6} задела, {var4} упало и разбилось.","{var1} плачет, {var2} плачет, а {var3} кудахчет:","{speach}"]}
+                      <span class="story-text">{"text":["Жили-были {var1} да {var2}","Была у них {var3}","Снесла {var3} {var4}, не простое - золотое","- {var1} бил, бил - не разбил","- {var2} била, била - не разбила","{var5} бежала, {var6} задела, {var4} упало и разбилось.","{var1} плачет, {var2} плачет, а {var3} кудахчет:","{speach}"]}</span> 
                   </div>
                 </div>
             </div>
@@ -58,10 +59,8 @@
             </div>
         </div>
     </div>
-
     <script src="./js/jquery-3.4.1.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/ryaba.js"></script>
-            
 </body>
 </html>
