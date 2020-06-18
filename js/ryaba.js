@@ -23,7 +23,7 @@ function getInputs() { // Функция получения массива зн�
 
 $(".btn-create-text").click(function(e){
   e.preventDefault();
-  $("#result-text").html(formatStr(fairyTaleWithVars));
+  $(".txt-area").html(formatStr(fairyTaleWithVars));
 });
 
 $(document).ready(function() {
@@ -36,7 +36,7 @@ $(document).ready(function() {
     }
     rez = rez.replace(new RegExp("{",'g'), ''); //Убираем оставшиеся скобки
     rez = rez.replace(new RegExp("}",'g'), ''); //Убираем оставшиеся скобки
-    $("#result-text").html(rez); // Отдаем результат на страницу
+    $(".txt-area").html(rez); // Отдаем результат на страницу
   });
 });
 

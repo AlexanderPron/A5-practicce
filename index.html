@@ -14,51 +14,39 @@
         <h1 class="fairy-tale-name">Русская народная сказка: Курочка ряба</h1>
         <form action="" method="GET">
             <div class="row">
-                <div class="col-1"><label for="var1">var1:</label></div>
-                <div class="col-11"><input type="text" id="var1" placeholder="Дед"></div>
-                <div class="col-1"><label for="var2">var2:</label></div>
-                <div class="col-11"><input type="text" id="var2" placeholder="Баба"></div>
-                <div class="col-1"><label for="var3">var3:</label></div>
-                <div class="col-11"><input type="text" id="var3" placeholder="курочка Ряба"></div>
-                <div class="col-1"><label for="var4">var4:</label></div>
-                <div class="col-11"><input type="text" id="var4" placeholder="яичко"></div>
-                <div class="col-1"><label for="var5">var5:</label></div>
-                <div class="col-11"><input type="text" id="var5" placeholder="мышка"></div>
-                <div class="col-1"><label for="var6">var6:</label></div>
-                <div class="col-11"><input type="text" id="var6" placeholder="хвостиком"></div>
-                <div class="col-1"><label for="speach">speach:</label></div>
-                <div class="col-11"><input type="text" id="speach" placeholder="Ёманарот!"></div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <button class="btn-create-text" type="button" data-toggle="modal" data-target=".modal">Создать текст</button>
-                    
+                <div class="col-6">
+                    <div class="row">
+
+                        <div class="col-2"><label for="var1">var1:</label></div>
+                        <div class="col-10"><input type="text" id="var1" placeholder="Дед"></div>
+                        <div class="col-2"><label for="var2">var2:</label></div>
+                        <div class="col-10"><input type="text" id="var2" placeholder="Баба"></div>
+                        <div class="col-2"><label for="var3">var3:</label></div>
+                        <div class="col-10"><input type="text" id="var3" placeholder="курочка Ряба"></div>
+                        <div class="col-2"><label for="var4">var4:</label></div>
+                        <div class="col-10"><input type="text" id="var4" placeholder="яичко"></div>
+                        <div class="col-2"><label for="var5">var5:</label></div>
+                        <div class="col-10"><input type="text" id="var5" placeholder="мышка"></div>
+                        <div class="col-2"><label for="var6">var6:</label></div>
+                        <div class="col-10"><input type="text" id="var6" placeholder="хвостиком"></div>
+                        <div class="col-2"><label for="speach">speach:</label></div>
+                        <div class="col-10"><input type="text" id="speach" placeholder="Ёманарот!"></div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="txt-area"></div>
+
                 </div>
             </div>
-
             <div class="row">
-                <div class="col-12">
+                <div class="col-1"></div>
+                <div class="col-5">
+                    <button class="btn-create-text" type="button" data-toggle="modal" data-target=".modal">Создать текст</button>
                     <button class="btn-change-var" type="button">Заменить переменные</button>
                 </div>
+                
             </div>
         </form>
-        <!-- <div class="modal">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                  <button type="button" class="close" data-dismiss="modal">
-                    <span>&times;</span>
-                  </button>
-                  <span class="story-text"></span> 
-              </div>
-            </div>
-        </div> -->
-        <div class="row">
-            <div class="col-12">
-                <div id="result-text">
-                        
-                </div>
-            </div>
-        </div>
     </div>
     <script src="./js/jquery-3.4.1.min.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
